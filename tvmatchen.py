@@ -25,7 +25,6 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 
 def setup_platform(hass, config, add_devices, discovery_info=None):
     widgeturl = config.get('widget_url')
-    hass.states.set('nextgame.MyState', 'Arne Weise')
     add_devices([TVMatchenSensor(widgeturl, hass)])
 
 class TVMatchenSensor(Entity):
@@ -63,7 +62,6 @@ class TVMatchenSensor(Entity):
         _LOGGER.info("Fetching data")
         content = urlopen(self._widgeturl + "&REF=HA")      
         soup = BeautifulSoup(content, "html.parser")
-        self.hass.states.set('nextgame.MyState', 'Test')
 
         self.match = soup.select("#matches .details h3")[0].text
         self.start_time = soup.select("#matches time")[0].text
