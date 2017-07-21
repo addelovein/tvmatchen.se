@@ -18,6 +18,15 @@ sensor:
 To retrieve your widget url got to the following page and create the widget of your preference:
 http://www.tvmatchen.nu/page/widget/
 
+Enter your email and info then you will receive the following:
+<iframe src="http://widget.tvmatchen.nu/597238e1a8566?heading=TV-matcher&border_color=blue&autoscroll=1" frameborder="0" style="width: 300px; height: 200px; border: none"></iframe>
+
+Copy the url:
+http://widget.tvmatchen.nu/597238e1a8566?heading=TV-matcher&border_color=blue&autoscroll=1
+
+And paste it in your config at widget_url
+
+
 I have only tested selecting one team in soccer. However it should not be any difference with other configs. (I hope)
  
  
