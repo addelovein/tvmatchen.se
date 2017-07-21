@@ -30,3 +30,4 @@ And paste it in your config at widget_url
 I have only tested selecting one team in soccer. However it should not be any difference with other configs. (I hope)
  
  
+``` I have no association with the owners of TVMatchen.se, I have asked permission to create this script and been granted as long as scripts parse max 4 times a day ```
